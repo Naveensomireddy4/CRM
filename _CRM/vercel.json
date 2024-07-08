@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "djcrm",
+  "builds": [
+    { "src": "djcrm/wsgi.py", 
+    "use": "@vercel/python" 
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", 
+    "dest": "djcrm/wsgi.py" }
+  ]
+}
