@@ -49,8 +49,7 @@ It provides **role-based access**, a **real-time dashboard**, and tools for **ca
 - JWT-based authentication for secure login
 - Role-based permissions for different user types
 
-## 📸 Screenshots
-*(Add relevant screenshots of login page, dashboard, lead management, etc.)*
+
 
 ## 🛠 Future Enhancements
 - Email notifications for lead status changes
