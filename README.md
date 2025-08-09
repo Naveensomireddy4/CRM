@@ -1,63 +1,77 @@
 # Client Relationship Management System (CRM)
-A **Full-Stack Web Application** built with **Django REST Framework**, **React**, and **PostgreSQL** that enables organizations to manage client relationships, assign leads, and track progress in real-time.
+
+A **Full-Stack Web Application** built with **Django**, **PostgreSQL**, and **Bootstrap** that enables organizations to manage client relationships, assign leads, and track progress efficiently.
+
+---
 
 ## 📌 Overview
-This CRM application is designed for **small to medium-sized organizations** to efficiently manage **Organizers** (organization heads), **Agents** (field employees), and **Leads** (clients).  
-It provides **role-based access**, a **real-time dashboard**, and tools for **categorizing leads** based on work type or industry.
+This CRM application is designed for **small to medium-sized organizations** to efficiently manage:
+- **Organizers** (organization heads)
+- **Agents** (field employees)
+- **Leads** (clients)
+
+It provides **role-based access**, a **dashboard**, and tools for **categorizing leads** based on work type or industry.
+
+---
 
 ## 🚀 Features
-### Authentication & Roles
-- **Role-based Access Control** with three distinct user types:
-  - **Organizer** – Organization head with full access
-  - **Agent** – Field employee who manages assigned leads
-  - **Lead** – Client information stored for tracking
-- Secure **JWT Authentication** (Django REST Framework)
 
-### Lead Management
+### 🔑 Authentication & Roles
+- **Role-based Access Control**:
+  - **Organizer** – Full access to manage agents and leads.
+  - **Agent** – Can only manage assigned leads.
+  - **Lead** – Client information stored for tracking.
+- Secure login system.
+
+### 📋 Lead Management
 - Organizers can:
-  - Create **agents** and **leads**
-  - Assign leads to specific agents
-  - Classify leads into **custom categories**
+  - Create **agents** and **leads**.
+  - Assign leads to specific agents.
+  - Classify leads into **custom categories**.
 - Agents can:
-  - View assigned leads
-  - Update lead status in real-time
+  - View assigned leads.
+  - Update lead status.
 
-### Real-Time Dashboard
-- Displays **current status** of all leads
-- Tracks **lead progress updates** instantly for both organizers and agents
+### 📊 Dashboard
+- Displays **current status** of all leads.
+- Tracks **lead progress**.
 
-### Tech Stack
-- **Backend** – Django REST Framework (API)
-- **Frontend** – React.js (UI)
+---
+
+## 🖼️ Screenshots
+
+### Sign Up
+![Sign Up](images/signup.png)
+
+### Sign In
+![Sign In](images/signin.png)
+
+### Dashboard
+![Dashboard](images/bashboard.png)
+
+### Agent Dashboard
+![Agent Dashboard](images/agent_dashboard.png)
+
+### Lead Dashboard
+![Lead Dashboard](images/lead_dashboard.png)
+
+### Create Lead
+![Create Lead](images/create_lead.png)
+
+---
+
+## 🛠 Tech Stack
+- **Backend** – Django
+- **Frontend** – HTML, CSS, Bootstrap
 - **Database** – PostgreSQL
-- **Authentication** – JWT
-- **Deployment** – Docker (optional)
+- **Authentication** – Django Auth
+- **Deployment** – Vercel / Any preferred platform
 
+---
 
-## 🧪 Usage
-1. **Login** as an Organizer or Agent.
-2. **Organizers** can:
-   - Create agents & leads
-   - Assign leads to agents
-   - Categorize leads
-3. **Agents** can:
-   - View assigned leads
-   - Update status
-4. **Dashboard** updates in real-time.
+## ⚙️ Installation & Setup
 
-## 🔐 Authentication
-- JWT-based authentication for secure login
-- Role-based permissions for different user types
-
-
-
-## 🛠 Future Enhancements
-- Email notifications for lead status changes
-- Drag-and-drop Kanban view for leads
-- Analytics dashboard with charts
-- Mobile-responsive improvements
-
-## 👨‍💻 Author
-**Somireddy Naveen Kumar Reddy**  
-📧 [naveensomireddy2112@gmail.com](mailto:naveensomireddy2112@gmail.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/naveen-kumar-reddy-somi-reddy-1b1ab2246/) | [GitHub](https://github.com/Naveensomireddy4)
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/CRM.git
+cd CRM/_CRM
